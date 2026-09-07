@@ -4,7 +4,6 @@ import kotlin.math.max
 fun main() {
     val scanner = Scanner(System.`in`)
 
-    // 1. Nhập thông tin sinh viên và điểm
     print("Nhập tên sinh viên: ")
     val ten = scanner.nextLine()
 
@@ -17,13 +16,11 @@ fun main() {
     print("Nhập điểm Database: ")
     val database = scanner.nextDouble()
 
-    // 2. Tính toán các yêu cầu
     val tongDiem = math + programming + database
     val diemTB = tongDiem / 3
     val diemCaoNhat = max(math, max(programming, database))
     val datYeuCau = if (diemTB >= 5.0) "Đạt" else "Không đạt"
 
-    // 3. In ra màn hình kết quả
     println("\n--- THÔNG TIN SINH VIÊN ---")
     println("Tên sinh viên: $ten")
     println("Tổng điểm: $tongDiem")
